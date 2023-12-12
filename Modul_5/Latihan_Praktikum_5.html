@@ -1,0 +1,341 @@
+<!--FROM HTML-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Belajar Membuat Form </title>
+    </head>
+    <body>
+        <!--Tag Form-->
+        <form action="prosesdata.php" method="post">
+            ....isi form....
+        </form>
+        
+        <!--Tag TextArea-->
+        <textarea rows="5" cols="20">
+            Text yang di isi dapat mencapai banyak baris
+        </textarea>
+        <br><br>
+
+        <!--Tag Select-->
+        <select>
+            <option>Pilihan 1</option> 
+            <option>Pilihan 2</option>
+            <option value="Pilihan ketiga">Pilihan 3</option>
+        </select>
+        <br><br>
+
+        <!--Tag Select memeliki atribut SELECTED-->
+        <select>
+            <option>Pilihan 1</option> 
+            <option>Pilihan 2</option>
+            <option value="Pilihan ketiga" selected>Pilihan 3</option>
+        </select>
+        <br><br>
+
+        <!--Tag Inputan-->
+        <input type="text" name="username">
+        <br><br>
+        <input type="text" name="email">
+
+        <hr align="left" size="3" color="#009900">
+    </body>
+</html>
+
+
+
+<!--LATIHAN PRAKTIKUM-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Belajar Membuat Form </title>
+    </head>
+    <body>
+        <form action="formulir.html" method="get">
+            Nama : <input type="text" name="nama" value="Nama Kamu"/>
+            <br><br>
+            Password : <input type="password" name="password"/>
+            <br><br>
+            Jenis Kelamin :
+            <input type="radio" name="jenis_kelamin" value="laki-laki" checked/>
+            Laki-Laki
+            <input type="radio" name="jenis_kelamin" value="perempuan" checked/>
+            Perempuan
+            <br><br>
+            Hobi :
+            <br>
+            <input type="checkbox" name="hobi_baca" />Membaca Buku <br>
+            <input type="checkbox" name="hobi_nulis" checked/>Menulis <br>
+            <input type="checkbox" name="hobi_mancing" />Memancing <br>
+            <br><br>
+            Asal Kota:
+            <select name="asal_kota">
+                <option value="Kota Jakarta">Jakarta</option>
+                <option>Bandung</option>
+                <option value="Kota Semarang" selected>Semarang</option>
+            </select>
+            <br><br>
+            Komentar Anda :
+            <textarea name="komentar" rows="5" cols="20">
+                Silahkan katakan isi hati anda... .
+            </textarea>
+            <br><br>
+            <input type="submit" value="Mulai Proses...!"
+        </form>
+        <hr align="left" size="3" color="#009900">
+    </body>
+</html>
+
+<!--TUGAS PRAKTIKUM - Perpustakaan-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Belajar Membuat Form </title>
+    </head>
+    <body>
+        <h1>Formulir Pendaftaran</h1>
+        <h2>Perpustakaan Kota Madiun</h2>
+
+        <form action="formulir_perpus.html" method="get">
+            <table border="2" >
+                <tr>
+                    <td>
+                        <table border="0">
+                            <tr>
+                                <td colspan="4"><b>Isikan Data Diri Anda dengan Benar dan Lengkap</b></td>
+			  	            </tr>
+                            <tr>
+                                <td>Nomor Anggota</td>
+                                <td></td>
+                                <td colspan="2"><input type="text" name="no_anggota" value="" disabled/> <i>*terisi otomatis</i></td>
+                            </tr>
+                            <tr>
+                                <td>Nomor KTP</td>
+                                <td></td>
+                                <td colspan="2"><input type="text" name="no_ktp" value=""/></td>
+                            </tr>
+                            <tr>
+                                <td>Nama Anggota</td>
+                                <td></td>
+                                <td colspan="2"><input type="text" name="nama" value=""/></td>
+                            </tr>
+                            <tr>
+                                <td>Tanggal Lahir</td>
+                                <td></td>
+                                <td colspan="2"><input type="date" name="tgl_lahir"/></td>
+                            </tr>
+                            <tr>
+                            <td>Jenis Kelamin</td>
+                             <td></td>
+                                <td colspan="0">
+                                    <input type="radio" name="jenis_kelamin" value="laki-laki" checked/>
+                                    Laki-Laki
+                                    <input type="radio" name="jenis_kelamin" value="perempuan" checked/>
+                                    Perempuan</td>
+                            </tr>                             
+                            <tr>
+                                <td>Pekerjaan</td>
+                                <td></td>
+                                <td colspan="2"><input type="checkbox" name="mahasiswa" />Pelajar/Mahasiswa
+                                    <input type="checkbox" name="pegawai" checked/>Pegawai 
+                                    <input type="checkbox" name="art" />Ibu Rumah Tangga</td>
+                            </tr>
+                            <tr>
+                                <td>Tipe Anggota</td>
+                                <td></td>
+                                <td colspan="2"><select name="tipe_anggota">
+                                    <option value="biasa">Anggota Biasa</option>
+                                    <option>Anggota Reguler</option>
+                                    <option value="l_bias" selected>Anggota Luar Biasa</option>
+                              </select></td>
+                            </tr>
+                            <tr>
+                                <td>Alamat</td>
+                                <td></td>
+                                <td colspan="2"><textarea name="alamat" rows="5" cols="20">
+                                    Silahkan isi lengkap... .
+                                </textarea></td>
+                            </tr>
+                            <tr>
+                                <td>Kode Pos</td>
+                                <td></td>
+                                <td colspan="2"><input type="text" name="kode_pos" value=""/></td>
+                            </tr>
+                            <tr>
+                                <td>HP/WA</td>
+                                <td></td>
+                                <td colspan="2"><input type="text" name="no_tlp"/></td>
+                            </tr>
+                            <tr>
+                                <td>E-mail</td>
+                                <td></td>
+                                <td colspan="2"><input type="text" name="email" value=""/></td>
+                            </tr>
+                            <tr>
+                                <td>Password</td>
+                                <td></td>
+                                <td colspan="2"><input type="text" name="password" value=""/></td>
+                            </tr>
+                            <tr>
+                                <td>Ulangi Password</td>
+                                <td></td>
+                                <td colspan="2"><input type="text" name="u_password" value=""/></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table border="0">
+                            <tr>
+                            <td colspan="4"><input type="submit" value="Simpan">       
+                                <input type="submit" value="Keluar"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <hr align="left" size="3" color="#009900">
+    </body>
+</html>
+
+
+<!--TUGAS PRAKTIKUM - Klinik Sehat-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Belajar Membuat Form </title>
+    </head>
+    <body>
+            <form action="formulir_kliniksehat.html" method="get">
+
+            <h1>Formulir Pemeriksaan Kesehatan</h1>        
+            <table border="2" >
+                <tr>
+                    <td>
+                        <table border="0">
+                            <tr>
+                                <td colspan="4"><b>Isikan Data Diri Anda dengan Benar dan Lengkap</b></td>
+			  	            </tr>
+                            <tr>
+                                <td>Nomor Pasien</td>
+                                <td></td>
+                                <td colspan="2"><input type="text" name="no_pasien" value="" disabled/> <i>*terisi otomatis</i></td>
+                            </tr>
+                            <tr>
+                                <td>Nama</td>
+                                <td></td>
+                                <td colspan="2"><input type="text" name="nama" value=""/></td>
+                            </tr>
+                            <tr>
+                            <td>Jenis Kelamin</td>
+                             <td></td>
+                                <td colspan="0">
+                                    <input type="radio" name="jenis_kelamin" value="laki-laki" checked/>
+                                    Laki-Laki
+                                    <input type="radio" name="jenis_kelamin" value="perempuan" checked/>
+                                    Perempuan</td>
+                            </tr>
+                            <tr>
+                                <td>Usia</td>
+                                <td></td>
+                                <td colspan="2"><input type="text" name="usia" value=""/></td>
+                            </tr>
+                            <tr>
+                                <td>Tempat Lahir</td>
+                                <td></td>
+                                <td colspan="2"><input type="text" name="tempat_lahir" value=""/></td>
+                            </tr>
+                            <tr>
+                                <td>Tanggal Lahir</td>
+                                <td></td>
+                                <td colspan="2"><input type="date" name="tgl_lahir"/></td>
+                            </tr>
+                            <tr>
+                                <td>Tinggi Badan</td>
+                                <td></td>
+                                <td colspan="2"><input type="text" name="tinggi_bdn" /></td>
+                            </tr>
+                            <tr>
+                                <td>Berat Badan</td>
+                                <td></td>
+                                <td colspan="2"><input type="text" name="berat_bdn"/></td>
+                            </tr>
+                            <tr>
+                                <td>Alamat</td>
+                                <td></td>
+                                <td colspan="2"><textarea name="alamat" rows="5" cols="20">
+                                    Silahkan isi lengkap... .
+                                </textarea></td>
+                            </tr>
+                            <tr>
+                                <td>HP/WA</td>
+                                <td></td>
+                                <td colspan="2"><input type="text" name="no_tlp"/></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table border="0">
+                            <tr>
+                                <td colspan="4"><i>***Mohon daftarkan Penyakit yang pernah atau sedang anda alami</i></td>
+			  	            </tr>
+                            <tr>
+                                <td>Alergi</td>
+                                <td></td>
+                                <td colspan="2"><input type="checkbox" name="alergi" /><br></td>
+                            </tr>
+                            <tr>
+                                <td>Masalah Pencernaan</td>
+                                <td></td>
+                                <td colspan="2"><input type="checkbox" name="pencernaan" /><br></td>
+                            </tr>
+                            <tr>
+                                <td>Cacat</td>
+                                <td></td>
+                                <td colspan="2"><input type="checkbox" name="cacat" /><br></td>
+                            </tr>
+                            <tr>
+                                <td>Asma</td>
+                                <td></td>
+                                <td colspan="2"><input type="checkbox" name="asma" /><br></td>
+                            </tr>
+                            <tr>
+                                <td>Masalah Jantung</td>
+                                <td></td>
+                                <td colspan="2"><input type="checkbox" name="jantung" /><br></td>
+                            </tr>
+                            <tr>
+                                <td>Pengobatan Psikologi</td>
+                                <td></td>
+                                <td colspan="2"><input type="checkbox" name="psikologi" /><br></td>
+                            </tr>
+                            <tr>
+                                <td>Diabetes</td>
+                                <td></td>
+                                <td colspan="2"><input type="checkbox" name="diabetes" /><br></td>
+                            </tr>
+                            <tr>
+                                <td>Penyakit Lainnya</td>
+                                <td></td>
+                                <td colspan="2"><input type="text" name="lainnya" /><br></td>
+                            </tr>                            
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table border="0">
+                            <tr>
+                            <td colspan="4"><input type="submit" value="Simpan">       
+                                <input type="submit" value="Keluar"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
